@@ -1,0 +1,177 @@
+/* reset */
+body,p,a,ul {
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	list-style-type: none;
+}
+
+
+/* base styles */
+
+body {
+	background: black;
+	overflow-x: hidden;
+	font-size: 16px;
+}
+
+a:hover {
+ color: white;
+ background-color: black;
+ padding: 10px 16px;
+ border-radius: 20px;
+ border: 2px solid white;
+}
+.container{
+	overflow: hidden;
+	padding: 10px;
+	position: relative;
+}
+.container:before {
+	content: '';
+	width: 8px;
+	height: 100%;
+	background: #313131;
+	position: absolute;
+	left: 20px;
+
+}
+
+/* fonts */
+h1,h2,p,a {
+	font-family: Ubuntu light;
+}
+
+
+/* mobile styles */
+.grid {
+	display: grid;
+	grid-template-columns: 1fr;
+}
+
+.sidebar{
+	display: none;
+
+}
+li {
+	padding: 10px;
+    color: white;
+}
+a{ 
+color:white; }
+
+.intro,.outro {
+	color: white;
+}
+.outro {
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+
+img {
+	max-width: 80%;
+	border: 4px solid black;
+}
+.logo {
+	padding-top: 40px;
+    display:block;
+    margin-left: auto;
+    margin-right:auto;
+}
+
+h1#title{
+	text-align: center;
+	padding-top: 60px;
+
+}
+h1 {
+	padding-left: 40px;
+	padding-top: 40px;
+}
+h2 {
+	padding-left: 40px;
+}
+p {
+	padding: 40px;
+}
+#one {
+	background-color:#79B9AA;
+}
+#two {
+	background-color:#D5DD59;
+}
+#three {
+	background-color:#E2A237;
+}
+#four {
+	background-color:#E45E54;
+}
+#five {
+	background-color:#D164AC;
+}
+#six {
+	background-color:#B864D1;
+}
+#seven {
+	background-color:#6B64D1;
+}
+#eight {
+	background-color:#64B8D1;
+}
+#nine {
+	background-color:#64D188;
+}
+
+/* tablet styles */
+
+@media screen and (min-width:620px){
+
+
+
+}
+
+
+
+/* laptop styles */
+
+@media screen and (min-width:960px){
+
+	body {
+		font-size: 20px;
+	}
+
+	.sidebar{
+		display: flex;
+		position: fixed;
+		top: 5%;
+		left: 93%;
+	}
+    
+    img {
+    	max-width:680px;
+    }
+
+}
+
+
+
+/* Large screen styles */
+
+@media screen and (min-width:1200px){
+
+body {
+		font-size: 23px;
+		margin: 80px;
+		padding: 40px;
+	}
+	.container{
+		padding: 0 50px;
+
+	}
+	.sidebar{
+	display: flex;
+}
+}
+
+
+
